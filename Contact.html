@@ -10,44 +10,47 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <br>
-        <!-- Nav pills -->
-        <ul class="nav nav-pills" role="tablist">
+  <nav class="navbar navbar-expand-md navbar-dark bg-gradient" style=" background-color: rgb(181, 198, 224)">
+    <a class="navbar-brand" style="color: aquamarine" href="#">Navbar</a>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="http://127.0.0.1:5500/yuexinc.github.io/index.html#home">Home</a>
+            <a class="nav-link" style="color: white;" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="http://127.0.0.1:5500/yuexinc.github.io/Schedule.html">Schedule</a>
+            <a class="nav-link" style="color: white;" href="Schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Project
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Music</a></li>
+              <li><a class="dropdown-item" href="#">Art</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="pill" href="http://127.0.0.1:5500/yuexinc.github.io/Contact.html">Contact</a>
+            <a class="nav-link active" style="color: white;" href="Contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="http://127.0.0.1:5500/yuexinc.github.io/About.html">About</a>
+            <a class="nav-link" style="color: white;" href="About.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link disabled" style="color: gray;" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-      
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div id="home" class="container tab-pane active"><br>
-          </div>
-          <div id="menu1" class="container tab-pane fade"><br>
-            <h3>Schedule</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div id="menu2" class="container tab-pane fade"><br>
-            <h3>Contact</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          </div>
-          <div id="menu2" class="container tab-pane fade"><br>
-            <h3>About</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          </div>
-        </div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
+    </div>
+  </nav>
 </body>
 </html>
