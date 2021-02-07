@@ -1,6 +1,6 @@
-function howdy(firstName){
+function howdy(){
     var inputValue = prompt("Please enter your first name: ")
-    alert("Howdy "+ firstName);
+    alert("Howdy "+ inputValue);
 }
 
 function conditional(){
@@ -29,7 +29,7 @@ function evalNumber(){
     if (isNaN(inputValue)) { //if the input value is not a number,
       alert(inputValue + " is not a number.");
     } else if (inputValue.length != 5){ //if the length of the number is not 5,
-      alert(inputValue + " is not a five-digit number.");
+      alert(inputValue + " is not a five-character entity.");
     } else if (inputValue % 2 == 0){
         alert(inputValue + " is an even number.");
     } else {
