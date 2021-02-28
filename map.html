@@ -1,20 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="js/sampleJS.js"></script>
-  <title>Hello, world!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="css/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <title>Document</title>
 </head>
 
-
-<body style=" background-color: #51304e">
+<body class="bg-gradient" style="background-color: #51304e;">
   <nav class="navbar navbar-expand-md navbar-dark bg-gradient">
     <a class="navbar-brand" style="color: aquamarine" href="#">Meow</a>
     <div class="container-fluid">
@@ -32,11 +38,9 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              APIs
-            </a>
+              data-bs-toggle="dropdown" aria-expanded="false">APIs</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="map.html">map</a></li>
+              <li><a class="dropdown-item active" href="map.html">map</a></li>
               <li><a class="dropdown-item" href="wiki.html">wiki</a></li>
               <li><a class="dropdown-item" href="wiki.html">ochre</a></li>
               <li>
@@ -46,17 +50,23 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="color: white;" href="Contact.html">contact</a>
+            <a class="nav-link" style="color: white;" href="Contact.html">contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="color: white;" href="About.html">about</a>
+          </li>
         </ul>
-
       </div>
     </div>
   </nav>
+</body>
 
-  <p style="color: white;">yuexinc@uchicago.edu</p>
+<body onload="mapLoad()">
+  <div class="container mt-3">
+    <h1 style="color:azure;">Map API Example</h1>
+    <div id="map"></div>
+  </div>
+  <script src="js/sampleJS.js"></script>
 </body>
 
 </html>
