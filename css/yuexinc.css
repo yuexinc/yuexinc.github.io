@@ -6,3 +6,8 @@ div#columns {
 div {
     display: block;
 }
+footer.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -21,13 +21,21 @@ function wikiAPI() {
        //console.log(wikiObject.query.pages);
        var pages = wikiObject.query.pages;
        for (var i in pages) {
-           var newDiv = document.createElement("div");
-           newDiv.setAttribute('class', 'row h4');
-           document.getElementById("wiki").appendChild(newDiv);
-           newDiv.innerText = pages[i].title;
-       }
+           //var newDiv = document.createElement("div");
+           //newDiv.setAttribute('class', 'row h4');
+           //document.getElementById("wiki").appendChild(newDiv);
+           //newDiv.innerText = pages[i].title;
+    
+   //super challenge
+   //difference between properties and methods: .method(), .property=
+   var pageURL = "http://en.wikipedia.org/?curid="
+   var newAnchor = document.createElement("a");
+   newAnchor.href = pageURL+pages[i].pageid; //setAttribute('href', pageURL+pages[i]);
+   newAnchor.className = 'd-block'; //setAttribute('class','d-block');
+   newAnchor.innerText = pages[i].title;
+   document.getElementById("wiki").appendChild(newAnchor);
+}
    }
-
    //send the API request to the server
    connect.send();
 }

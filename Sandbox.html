@@ -38,6 +38,7 @@
               <li><a class="dropdown-item" href="map.html">map</a></li>
               <li><a class="dropdown-item" href="wiki.html">wiki</a></li>
               <li><a class="dropdown-item" href="wiki.html">ochre</a></li>
+              <li><a class="dropdown-item" href="#">music(forthcoming)</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -58,7 +59,7 @@
     </div>
   </nav>
   <br>
-  <div class="container" style="color: white">
+  <div class="container mt-5" style="color: white">
     <div class="row">
       <div class="col-md display-4">cat1</div>
       <div class="col-md display-4">cat2</div>
@@ -71,7 +72,7 @@
     </div>
   </div>
   <br>
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md display-md py-3">
     <img src="image/cat1.jpg" class="img-fluid img-thumbnail">
@@ -84,8 +85,7 @@
       </div>
   </div>
   </div>
-  <br>
-  <div class="container" style="color: white;">
+  <div class="container mt-5" style="color: white;">
     <h2 id="table title">Feeding Schedule</h2>
     <p>When/what should they eat?</p>
     <table class="table table-borderless container-fluid" style="color: white;">
@@ -117,10 +117,23 @@
   </div>
 <!-- buttons -->
   <div class="container mt-5">
-    <button type="button" class="btn btn-primary" onclick="changeTitle()">Change Title</button>
-    <button type="button" class="btn btn-primary" onclick="disappear()">Get rid of Frankenstein</button>
-    <button type="button" class="btn btn-primary" onclick="meow()">Hello Kitties</button>
+    <button type="button" class="btn btn-block" onclick="changeTitle()" style="background-color: palevioletred; color: white; border: #51304e;">Change Title</button>
+    <button type="button" class="btn btn-block" onclick="disappear()" style="background-color: rgb(228, 78, 123); color: white; border: #51304e;">Get rid of Frankenstein</button>
+    <button type="button" class="btn btn-block" onclick="meow()" style="background-color: plum; color: white; border: #51304e;">Hello kitties</button>
   </div>
-
+  <br>
+  <footer id="footerPlaceholder" class="d-none d-md-block footer container-fluid mt-auto py-3 bg-dark">
+    <div class="container">
+      <div class="row text-muted">
+        <div class="col-4">
+          test footer
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4 justify-content-end">
+          yuexinc.
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
