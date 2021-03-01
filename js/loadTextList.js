@@ -26,7 +26,7 @@ function XMLrequest(link){
 function listTexts(sourceXML){
     //select, parse, and display the data
     console.log(sourceXML);
-    var textList = sourceXML.getElementByTagName('text');
+    var textList = sourceXML.getElementsByTagName('text');
     console.log(textList);
     for (i=0; i < textList.length; i++) {
         //create one row per text

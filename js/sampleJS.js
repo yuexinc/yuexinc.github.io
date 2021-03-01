@@ -60,3 +60,38 @@ function parentFunction() {
 function meow() {
     alert("Meooow");
 }
+function parseArray(array) {
+    var newHair = prompt("enter a hairstyle");
+    array.push(newHair);
+    var x = array.sort();
+    var y = x.length;
+    console.log(x[y-1]);
+    console.log(array);
+}
+
+var userArray = []
+function sortArray(){
+  var userInput = document.getElementById('inputTerm').value;
+  var userOutput = document.getElementById('outputRow');
+  userArray.push(userInput)
+  console.log(userArray);
+  document.getElementById('tempList').innerHTML = 'Unsorted list: '+userArray.join(", ");
+  document.getElementById('inputTerm').value = '';
+  if (userArray.length == 4) {
+    userArray.sort();
+    for (i in userArray) {
+      var newLI = document.createElement('li');
+      newLI.innerText = userArray[i];
+      userOutput.appendChild(newLI);
+    }
+  };
+}
+
+var longestVal = "";
+function longestValue(){
+  var userInput = document.getElementById('inputTerm').value;
+  if (userInput.length > longestVal.length) {
+    longestVal = userInput;
+  };
+  document.getElementById('outputRow').innerText = longestVal;
+}
