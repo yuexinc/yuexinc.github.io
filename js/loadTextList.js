@@ -10,7 +10,6 @@ function loadXML(){
     console.log('loadXML -- ok');
 };
 
-var XMLResponse;
 
 function XMLrequest(link){
     //make the API call and send the results to the next function
@@ -46,7 +45,7 @@ function listTexts(sourceXML){
         td.setAttribute('id', 'td_name_'+ i);
         //create new div
         var newDiv = document.createElement('div');
-        newDiv.addEventListener('click', showImage.bind(this, i, linkList));
+        newDiv.addEventListener('click', showImage(i, linkList));
         newDiv.textContent = textList[i].children[0].children[0].innerHTML;
         td.appendChild(newDiv);
         //new column description
