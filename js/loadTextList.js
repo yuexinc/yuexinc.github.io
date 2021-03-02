@@ -1,9 +1,9 @@
 //define parent element
 var parentElement = document.getElementById('ochreTableBody');
 //define API url
-var url = "http://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
+var url = "https://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b65ec79300";
 
-//first function, alled on <body>
+//first function, called on <body>
 function loadXML(){
     //chain the next function to create the XHR
     XMLrequest(url);
@@ -43,5 +43,36 @@ function listTexts(sourceXML){
         td2.setAttribute('id', 'td_desc_' + i);
         td2.textContent = textList[i].children[3].innerHTML;
         document.getElementById('row_' + i).appendChild(td2);
+        
     }
 }
+/* 
+/*var td3 = document.createElement('td');
+        td3.setAttribute('id', 'td_photo_' + i);
+        td3.textContent = textList[i].children[4].children[i].innerHTML;
+        document.getElementById('row_' + i).appendChild(td3);
+var links = textList[i].children[4];
+        for (i = 0; i < 2; i++) {
+        td3.setAttribute(‘id’, ‘td_photo_’ + i);
+        var td3 = document.createElement(‘td’);
+        var uuid = links.children[i].attributes[1].nodeValue;
+        var url = “http://ochre.lib.uchicago.edu/ochre?uuid=” + uuid + “&preview”;
+        td3.setAttribute(‘href’, XMLrequest(url));
+        td3.textContent = links.children[i].innerHTML;
+        document.getElementById(‘row_’ + i).appendChild(td3);
+ */
+
+/*function showImage() {
+    var x=document.links;
+    var txt = "http://ochre.lib.uchicago.edu/ochre?uuid=";
+    var i;
+    for (i=0; i<x.length;i++) {
+        txt=txt + x[i].href + "&preview";
+    }
+    document.getElementById("resource").innerHTML = txt;
+}
+
+function showImage() {
+    document.getElementById('td_name_' + i).href;
+}
+*/
