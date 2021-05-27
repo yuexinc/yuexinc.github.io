@@ -42,7 +42,12 @@ function draw() {
   //background(220);
   image(video, 0, 0);
   filter(POSTERIZE, 3);
-  
+  fill(0,100,0);
+  rect(10,10,20,20);
+  rect(610,10,20,20);
+  rect(10,450,20,20);
+  rect(610,450,20,20);
+
   let d = dist(noseX, noseY-20, eyelX, eyelY);
   noStroke();
   fill('PINK');
@@ -60,3 +65,4 @@ function draw() {
   triangle(elbowX+20, elbowY-500, elbowX+10, elbowY-350, elbowX+30, elbowY-350);//middle tri
   triangle(elbowX+40, elbowY-480, elbowX+30, elbowY-350, elbowX+50, elbowY-350); //right tri
 }
+
