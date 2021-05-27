@@ -5,7 +5,7 @@ function howdy() {
     if (currentHour < 10) {
         alert("Good morning!");
     } else if (currentHour < 18) {
-        alert("God day!");
+        alert("Good day!");
     } else {
         alert("Good evening!");
     }
@@ -19,7 +19,7 @@ function howdy() {
     }
 } */
 function evalNumber() {
-    var inputValue = prompt("Enter any five-digit number without commas")
+    var inputValue = prompt("Enter any five-digit integer")
     if (isNaN(inputValue)) { //if the input value is not a number,
         alert(inputValue + " is not a number.");
     } else if (inputValue.length != 5) { //if the length of the number is not 5,
