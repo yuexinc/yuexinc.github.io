@@ -54,11 +54,11 @@ function draw() {
   ellipse(noseX, noseY, 250); //face
   fill(219,112,147);
   triangle(noseX, noseY, noseX-75, noseY-75, noseX-200, noseY-10);//upper bead
-  fill(250,100,120);
+  fill(250,100, 120);
   triangle(noseX, noseY, elbowX, noseY+75, noseX-200, noseY-10);//lower bead
   fill(0);
   ellipse(eyelX, eyelY, 50);//eye
-  fill(255);
+  fill(eyelX, 250, eyelY);
   ellipse(eyelX, eyelY, 20);//eye
   fill(random(0,255),0,random(0,255));
   triangle(elbowX, elbowY-480, elbowX-10, elbowY-350, elbowX+10, elbowY-350); //left tri
